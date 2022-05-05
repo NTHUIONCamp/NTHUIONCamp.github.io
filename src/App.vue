@@ -18,6 +18,30 @@
     <v-main>
       <IndexPage />
     </v-main>
+
+    <v-footer dark padless>
+      <v-row justify="center" no-gutters>
+        <v-btn
+          v-for="link in links"
+          :key="link"
+          :href="link.url"
+          target="_blank"
+          class="mx-4 my-2"
+          icon
+        >
+          <v-icon size="24px">mdi-{{ link.type }}</v-icon>
+        </v-btn>
+
+        <v-col class="py-4 text-center" cols="12">營長 林禾堃</v-col>
+
+        <v-divider></v-divider>
+
+        <v-col class="py-4 text-center" cols="12">
+          {{ new Date().getFullYear() }} —
+          <strong>清大暑期程式競賽集訓營</strong>
+        </v-col>
+      </v-row>
+    </v-footer>
   </v-app>
 </template>
 
@@ -32,7 +56,20 @@ export default {
   },
 
   data: () => ({
-    //
+    links: [
+      {
+        type: "facebook",
+        url: "https://www.facebook.com/nthuioncamp",
+      },
+      {
+        type: "email",
+        url: "mailto:nthu.ioncamp@gmail.com",
+      },
+      {
+        type: "phone",
+        url: "tel:+886-",
+      },
+    ],
   }),
 };
 </script>
