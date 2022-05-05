@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import IndexPage from "../components/IndexPage";
 import CoursesPage from "../components/CoursesPage";
 import LecturersPage from "../components/LecturersPage";
+import TravelPage from "../components/TravelPage";
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/lecturers',
     name: 'lecturers',
     component: LecturersPage
+  },
+  {
+    path: '/travel',
+    name: 'travel',
+    component: TravelPage
   },
 ]
 
