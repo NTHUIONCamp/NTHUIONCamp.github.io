@@ -4,6 +4,7 @@ import IndexPage from "../components/IndexPage";
 import CoursesPage from "../components/CoursesPage";
 import LecturersPage from "../components/LecturersPage";
 import TravelPage from "../components/TravelPage";
+import NoticesPage from "../components/NoticesPage";
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/travel',
     name: 'travel',
     component: TravelPage
+  },
+  {
+    path: '/notices',
+    name: 'notices',
+    component: NoticesPage
   },
 ]
 

@@ -16,6 +16,7 @@
       <v-btn text plain to="/courses">營隊課程</v-btn>
       <v-btn text plain to="/lecturers">師資團隊</v-btn>
       <v-btn text plain to="/travel">交通資訊</v-btn>
+      <v-btn text plain to="/notices">注意事項</v-btn>
     </v-app-bar>
 
     <v-main><router-view></router-view></v-main>
