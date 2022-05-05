@@ -1,19 +1,19 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
-        <v-btn text plain to="/">
-          <v-img
-            alt="Vuetify Logo"
-            class="shrink mr-2"
-            contain
-            src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-            transition="scale-transition"
-            width="40"
-          />
-          <v-app-bar-title class="text--white">2022 IONCamp</v-app-bar-title>
-        </v-btn>
-      </div>
+      <v-btn text plain to="/">
+        <v-img
+          alt="Vuetify Logo"
+          class="shrink mr-2"
+          contain
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          transition="scale-transition"
+          width="40"
+        />
+        <v-app-bar-title class="text--white">2022 IONCamp</v-app-bar-title>
+      </v-btn>
+      <v-spacer></v-spacer>
+      <v-btn text plain to="/courses"> 營隊課程 </v-btn>
     </v-app-bar>
 
     <v-main><router-view></router-view></v-main>
