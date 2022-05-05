@@ -16,13 +16,13 @@
       </div>
     </v-app-bar>
 
-    <router-view></router-view>
+    <v-main><router-view></router-view></v-main>
 
     <v-footer dark padless>
       <v-row justify="center" no-gutters>
         <v-btn
           v-for="link in links"
-          :key="link"
+          :key="link.url"
           :href="link.url"
           target="_blank"
           class="mx-4 my-2"
