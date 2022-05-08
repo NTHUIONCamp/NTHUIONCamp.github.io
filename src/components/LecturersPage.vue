@@ -66,10 +66,10 @@ export default {
       },
     ],
     colors: [
-      "accent",
       "error",
-      "warning",
+      "accent",
       "success",
+      "warning",
       "info",
     ],
   }),

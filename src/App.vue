@@ -1,22 +1,35 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app dark color="primary">
       <v-btn text plain to="/">
         <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
           transition="scale-transition"
           width="40"
+          :src="require('./assets/logo.png')"
         />
         <v-app-bar-title class="text--white">2022 IONCamp</v-app-bar-title>
       </v-btn>
       <v-spacer></v-spacer>
-      <v-btn text plain to="/courses">營隊課程</v-btn>
-      <v-btn text plain to="/lecturers">師資團隊</v-btn>
-      <v-btn text plain to="/travel">交通資訊</v-btn>
-      <v-btn text plain to="/notices">注意事項</v-btn>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn text plain v-for="(menu, i) in menus" :to="menu.to" :key="i">
+          {{ menu.text }}
+        </v-btn>
+      </v-toolbar-items>
+      <v-menu v-if="$vuetify.breakpoint.smAndDown" color="primary">
+        <template v-slot:activator="{ on }">
+          <v-app-bar-nav-icon v-on="on"></v-app-bar-nav-icon>
+        </template>
+        <v-list color="primary">
+          <v-list-item v-for="(menu, i) in menus" :key="i">
+            <v-btn text plain :to="menu.to">
+              {{ menu.text }}
+            </v-btn>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-app-bar>
 
     <v-main><router-view></router-view></v-main>
@@ -54,6 +67,13 @@ export default {
   components: {},
 
   data: () => ({
+    menus: [
+      { to: "courses", text: "營隊課程" },
+      { to: "lecturers", text: "師資團隊" },
+      { to: "travel", text: "交通資訊" },
+      { to: "notices", text: "注意事項" },
+      { to: "", text: "" },
+    ],
     links: [
       {
         type: "facebook",

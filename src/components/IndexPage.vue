@@ -4,7 +4,7 @@
       <v-row class="text-center">
         <v-col cols="12">
           <v-img
-            :src="require('../assets/logo.svg')"
+            :src="require('../assets/logo.png')"
             class="my-3"
             contain
             height="200"
@@ -18,7 +18,7 @@
       </v-row>
     </v-parallax>
     <v-row class="text-center mt-3">
-      <v-col>
+      <v-col cols="12" sm="4">
         <v-card elevation="2" color="accent">
           <v-card-title>時程</v-card-title>
           <v-card-text>
@@ -30,7 +30,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="4">
         <v-card elevation="2" outlined color="warning">
           <v-card-title>費用</v-card-title>
           <v-card-text>
@@ -38,7 +38,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="4">
         <v-card elevation="2" outlined color="success">
           <v-card-title>住宿</v-card-title>
           <v-card-text>
