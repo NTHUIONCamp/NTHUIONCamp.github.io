@@ -85,7 +85,7 @@ export default {
       },
       {
         type: "phone",
-        url: "tel:+886-",
+        url: "tel:+886-902202710",
       },
     ],
   }),

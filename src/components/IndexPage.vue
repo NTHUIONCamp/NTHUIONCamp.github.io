@@ -36,7 +36,7 @@
         <v-card elevation="2" outlined color="warning">
           <v-card-title>費用</v-card-title>
           <v-card-text>
-            每人 <s>6000</s> {{ price }} 元整。<br /><s>（若不住宿，住宿費用將於報到時退還。 ）</s>
+            每人 <del>6000</del> <strong><em>{{ price }}</em></strong> 元整。<br /><del>（若不住宿，住宿費用將於報到時退還。 ）</del>
           </v-card-text>
         </v-card>
       </v-col>
@@ -60,11 +60,11 @@ export default {
     brief:
       "對於初學程式設計感到迷惘嗎？或是在挑戰 APCS 或大大小小的程式設計比賽感到挫折呢？讓 IONCamp 透過連續五天密集且扎實的培訓課程，帶領你突破目前的困境吧！",
     dates: [
-      { text: "報名截止", date: "" },
-      { text: "錄取公告", date: "" },
+      { text: "報名截止", date: "5/29" },
+      { text: "錄取公告", date: "6/01" },
       { text: "營隊", date: "7/25~7/29" },
     ],
-    price: "",
+    price: "3500",
   }),
 };
 </script>
