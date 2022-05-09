@@ -3,9 +3,9 @@
     <v-parallax dark :src="require('../assets/bg.jpg')">
       <v-row class="text-center">
         <v-col cols="12">
-          <v-img :src="require('../assets/logo.png')" class="my-3" contain height="200" />
+          <v-img contain :src="require('../assets/logo.png')" class="my-3" height="200" />
         </v-col>
-        <v-col class="mb-4 shadowed-text">
+        <v-col class="my-3 shadowed-text">
           <h1 class="display-2 font-weight-bold mb-3">2022 IONCamp</h1>
           <h2 class="subheading font-weight-regular">清大暑期程式競賽集訓營</h2>
           <p class="subheading font-weight-regular">{{ brief }}</p>

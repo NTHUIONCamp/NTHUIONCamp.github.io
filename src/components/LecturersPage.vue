@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row class="text-center">
-      <v-col class="mb-4">
+      <v-col class="my-3">
         <h1 class="display-2 font-weight-bold mb-3">師資團隊</h1>
       </v-col>
     </v-row>

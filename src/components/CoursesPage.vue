@@ -1,8 +1,8 @@
 <template>
   <v-container>
     <v-row class="text-center">
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">營隊課程</h1>
+      <v-col class="my-3">
+        <h1 class="display-2 font-weight-bold">營隊課程</h1>
       </v-col>
     </v-row>
     <v-row justify="center">
