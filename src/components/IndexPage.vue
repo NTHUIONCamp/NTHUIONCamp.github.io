@@ -10,7 +10,7 @@
             height="200"
           />
         </v-col>
-        <v-col class="mb-4">
+        <v-col class="mb-4 shadowed-text">
           <h1 class="display-2 font-weight-bold mb-3">2022 IONCamp</h1>
           <h2 class="subheading font-weight-regular">清大暑期程式競賽集訓營</h2>
           <p class="subheading font-weight-regular">{{ brief }}</p>
@@ -66,3 +66,9 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.shadowed-text {
+  text-shadow: 0 0 .69em black, 0 0 .69em black, 0 0 .87em black, 0 0 .87em black, 0 0 .92em black !important;
+}
+</style>
