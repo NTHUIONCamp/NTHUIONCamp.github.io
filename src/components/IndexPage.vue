@@ -3,12 +3,7 @@
     <v-parallax dark :src="require('../assets/bg.jpg')">
       <v-row class="text-center">
         <v-col cols="12">
-          <v-img
-            :src="require('../assets/logo.png')"
-            class="my-3"
-            contain
-            height="200"
-          />
+          <v-img :src="require('../assets/logo.png')" class="my-3" contain height="200" />
         </v-col>
         <v-col class="mb-4 shadowed-text">
           <h1 class="display-2 font-weight-bold mb-3">2022 IONCamp</h1>
@@ -17,6 +12,13 @@
         </v-col>
       </v-row>
     </v-parallax>
+    <v-row class="mt-3">
+      <v-col>
+        <v-alert prominent border="left" type="error">
+          因為受到武漢肺炎疫情影響的緣故，非常遺憾的是 2022 年清大暑期程式競賽集訓營將以線上形式舉辦。
+        </v-alert>
+      </v-col>
+    </v-row>
     <v-row class="text-center mt-3">
       <v-col cols="12" sm="4">
         <v-card elevation="2" color="accent">
@@ -34,14 +36,14 @@
         <v-card elevation="2" outlined color="warning">
           <v-card-title>費用</v-card-title>
           <v-card-text>
-            每人 {{ price }} 元整。<br />（若不住宿，住宿費用將於報到時退還。 ）
+            每人 <s>6000</s> {{ price }} 元整。<br /><s>（若不住宿，住宿費用將於報到時退還。 ）</s>
           </v-card-text>
         </v-card>
       </v-col>
       <v-col cols="12" sm="4">
         <v-card elevation="2" outlined color="success">
           <v-card-title>住宿</v-card-title>
-          <v-card-text>
+          <v-card-text class="text-decoration-line-through">
             清華大學學生宿舍，須自行攜帶睡袋與盥洗用品。
           </v-card-text>
         </v-card>
