@@ -4,7 +4,7 @@
       <v-btn text plain to="/">
         <v-img
           alt="Vuetify Logo"
-          class="shrink mr-2"
+          class="shrink mr-2 shadowed-img"
           contain
           transition="scale-transition"
           width="40"
@@ -95,5 +95,9 @@ export default {
 <style scoped>
 .v-btn {
   text-transform: unset !important;
+}
+.shadowed-img {
+  -webkit-filter: drop-shadow(0 0 .69em black)  !important;
+  filter: drop-shadow(0 0 .69em black)  !important;
 }
 </style>
