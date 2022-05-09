@@ -3,9 +3,8 @@
     <v-app-bar app dark color="primary">
       <v-btn text plain to="/">
         <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2 shadowed-img"
           contain
+          class="shrink mr-2 shadowed-img"
           transition="scale-transition"
           width="40"
           :src="require('./assets/logo.png')"
