@@ -11,9 +11,9 @@
         />
         <v-app-bar-title class="text--white">2022 IONCamp</v-app-bar-title>
       </v-btn>
-      <v-spacer></v-spacer>
+      <v-spacer />
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn text plain v-for="(menu, i) in menus" :to="menu.to" :key="i">
+        <v-btn text plain v-for="(menu, i) in menus" :to="menu.to" :href="menu.href" :target="menu.href ? '_blank' : ''" :key="i">
           {{ menu.text }}
         </v-btn>
       </v-toolbar-items>
@@ -71,7 +71,7 @@ export default {
       { to: "lecturers", text: "師資團隊" },
       { to: "travel", text: "交通資訊" },
       { to: "notices", text: "注意事項" },
-      { to: "", text: "" },
+      { href: "https://forms.gle/2CX5dtniiNvneAsJ9", text: "報名表單" },
     ],
     links: [
       {
