@@ -69,8 +69,8 @@ export default {
     menus: [
       { to: "courses", text: "營隊課程" },
       { to: "lecturers", text: "師資團隊" },
-      { to: "travel", text: "交通資訊" },
       { to: "notices", text: "注意事項" },
+      { to: "travel", text: "交通資訊" },
       { href: "https://forms.gle/2CX5dtniiNvneAsJ9", text: "報名表單" },
     ],
     links: [
