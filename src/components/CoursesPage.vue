@@ -66,8 +66,8 @@ export default {
       },
       {
         name: "基礎資料結構",
-        start: "2022-07-25 13:30",
-        end: "2022-07-25 17:30",
+        start: "2022-07-25 14:00",
+        end: "2022-07-25 17:00",
         color: "accent",
         details: [
           "STL: (unordered) set/map, deque, queue, stack, priority queue",
@@ -97,8 +97,8 @@ export default {
       },
       {
         name: "基礎 DP",
-        start: "2022-07-26 13:30",
-        end: "2022-07-26 17:30",
+        start: "2022-07-26 14:00",
+        end: "2022-07-26 17:00",
         color: "accent",
         details: [
           "基本概念介紹",
@@ -133,8 +133,8 @@ export default {
       },
       {
         name: "基礎圖論",
-        start: "2022-07-27 13:30",
-        end: "2022-07-27 17:30",
+        start: "2022-07-27 14:00",
+        end: "2022-07-27 17:00",
         color: "accent",
         details: [
           "名詞介紹、圖的表示",
@@ -169,8 +169,8 @@ export default {
       },
       {
         name: "數論",
-        start: "2022-07-28 13:30",
-        end: "2022-07-28 17:30",
+        start: "2022-07-28 14:00",
+        end: "2022-07-28 17:00",
         color: "accent",
         details: [
           "篩法",
@@ -214,10 +214,58 @@ export default {
         color: "success",
       },
       {
-        name: "頒獎暨結業",
-        start: "2022-07-29 18:00",
-        end: "2022-07-29 19:00",
+        name: "開板暨題解",
+        start: "2022-07-29 19:00",
+        end: "2022-07-29 20:00",
         color: "error",
+      },
+      {
+        name: "TA 時間",
+        start: "2022-07-28 13:30",
+        end: "2022-07-28 14:00",
+        color: "primary",
+      },
+      {
+        name: "TA 時間",
+        start: "2022-07-28 17:00",
+        end: "2022-07-28 17:30",
+        color: "primary",
+      },
+      {
+        name: "TA 時間",
+        start: "2022-07-27 13:30",
+        end: "2022-07-27 14:00",
+        color: "primary",
+      },
+      {
+        name: "TA 時間",
+        start: "2022-07-27 17:00",
+        end: "2022-07-27 17:30",
+        color: "primary",
+      },
+      {
+        name: "TA 時間",
+        start: "2022-07-26 13:30",
+        end: "2022-07-26 14:00",
+        color: "primary",
+      },
+      {
+        name: "TA 時間",
+        start: "2022-07-26 17:00",
+        end: "2022-07-26 17:30",
+        color: "primary",
+      },
+      {
+        name: "TA 時間",
+        start: "2022-07-25 13:30",
+        end: "2022-07-25 14:00",
+        color: "primary",
+      },
+      {
+        name: "TA 時間",
+        start: "2022-07-25 17:00",
+        end: "2022-07-25 17:30",
+        color: "primary",
       },
     ],
     selectedEvent: {},

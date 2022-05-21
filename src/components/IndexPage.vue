@@ -24,10 +24,12 @@
         <v-card elevation="2" color="accent">
           <v-card-title>時程</v-card-title>
           <v-card-text>
-            <v-list dense color="accent">
-              <v-list-item v-for="i in dates" :key="i.text">
-                {{ i.text }}日期：{{ i.date }}
-              </v-list-item>
+            <v-list dense rounded color="accent">
+              <v-list-item-group>
+                <v-list-item v-for="i in dates" :key="i.text">
+                  {{ i.text }}日期：{{ i.date }}
+                </v-list-item>
+              </v-list-item-group>
             </v-list>
           </v-card-text>
         </v-card>
